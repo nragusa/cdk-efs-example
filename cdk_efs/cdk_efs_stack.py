@@ -25,6 +25,7 @@ class CdkEfsStack(core.Stack):
         )
 
         # Example EFS filesystem
+        # All options: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_efs/FileSystem.html
         efs_filesystem = efs.FileSystem(
             self, "ExampleEFSFileSystem",
             vpc=vpc,
